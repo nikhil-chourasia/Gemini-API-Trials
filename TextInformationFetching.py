@@ -1,6 +1,6 @@
 from google import genai
 
-client = genai.Client(api_key='AIzaSyCB5BUYS6-ArsOHdAxJSUZr5C0sa7Zy8kA')
+client = genai.Client(api_key='GEMINI_API_KEY')
 question = input("Enter your prompt here: ")
 response = client.models.generate_content(
     model="gemini-2.0-flash", contents=question
